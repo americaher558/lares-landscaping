@@ -1,0 +1,31 @@
+.areas-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.areas-container h1 {
+    color: var(--tertiary-color);
+    margin-bottom: 15px;
+}
+
+.areas-container p {
+    margin-bottom: 30px;
+}
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.area-box {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 25px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}

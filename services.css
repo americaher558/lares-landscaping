@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: rgb(40, 146, 68);
+    --secondary-color:rgb(241, 246, 221);
+    --tertiary-color: rgb(16, 53, 26);
+    --background-color: white;
+}
+body{
+    background-color: var(--background-color);
+    font-family: georgia, serif;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.button .btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.button .btn:hover {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+}
+.service-row {
+    display: grid;
+    width: 95%;
+    margin: 20px auto;
+    justify-items: center;
+    gap: 30px;
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+p {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+h2{
+        text-align: center;
+        color: var(--primary-color);
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+
+.services {
+    background-color: var(--secondary-color);
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 25px solid var(--primary-color);
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-services {
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    height: auto;
+    width: 70%;
+    border-radius: 15px;
+    aspect-ratio: 1/1;
+}
+
+/* mobile */
+
+@media (max-width: 768px) {
+
+    .service-row {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .services {
+        width: 100%;
+        height: auto;
+        border: 15px solid var(--primary-color);
+        padding: 15px;
+    }
+
+    .img-services {
+        width: 85%;
+        height: auto;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
